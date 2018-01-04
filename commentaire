@@ -1,5 +1,40 @@
-- site communautaire de jeux en coop
+SITE COMMUNAUTAIRE DE JEUX EN COOP
 
-- ajout de fiche jeux par les membres
+- idées de nom : 
+	on & off
+	games banger
 
 - une fiche : 
+	nom
+	une image
+	coop : 
+		local
+		en ligne
+		les 2
+		les 2 en même temps
+	nbre de joueur
+	date de sortie
+	prix
+	avis/note/recommandé
+	lien vers site officiel
+	compte steam des joueurs qui cherchent d'autres joueurs
+
+- bdd :
+ 	membre
+ 	jeux
+ 		avis
+
+- membre : 
+	demande de création de fiche
+	test de jeux (à valider par admin)
+	pouce de validation pour les membres qui publient des tests
+
+ 	-----
+
+ 	Developper le contexte et la problématique
+ 	petite présentation powerpoint
+
+ QUESTIONS
+
+- gestion des images en bdd ?
+	envoie de l'image sur le serveur avec un form puis sauvegarde du chemin en bdd ?
