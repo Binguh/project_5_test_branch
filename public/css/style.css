@@ -1,0 +1,34 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/* HEADER */
+	
+	#logoutStripe {
+		width: 100%;
+		height: 50px;
+		background-color: rgb(137, 20, 11);
+	}
+
+	#logoutStripe p {
+		text-align: right;
+		margin: 0;
+	}
+
+	#logoutStripe a {
+		color: rgb(206, 210, 209);
+		text-decoration: none;
+	}
+
+	#nameStripe {
+		width: 100%;
+		height: 250px;
+		background-color: rgb(172, 48, 38);
+	}
+
+	.contentColumn {
+		width: 70%;
+		margin: 0 auto;
+	}

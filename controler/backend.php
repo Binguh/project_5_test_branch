@@ -18,11 +18,11 @@
 		require('view/backend/addGameSheetView.php');
 	}
 
-	function addGame($name, $coopType, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite)
+	function addGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite)
 	{
 		$gameManager = new InformationSheetManager();
 
-		$newGame = $gameManager->newGame($name, $coopType, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite);
+		$newGame = $gameManager->newGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite);
 		if ($newGame === false) {
 			throw new Exception('Impossible d\'ajouter le nouveau jeu');			
 		} else {

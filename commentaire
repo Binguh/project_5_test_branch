@@ -3,15 +3,19 @@ SITE COMMUNAUTAIRE DE JEUX EN COOP
 - idées de nom : 
 	on & off
 	games banger
+	games for friend
+	jeuxcoop.fr
 
 - une fiche : 
 	nom
-	une image
+	une image(changement aléatoire entre quelques images)
 	coop : 
 		local
 		en ligne
 		les 2
 		les 2 en même temps
+		(jouable en solo)
+	lootbox ou microtransaction
 	nbre de joueur
 	date de sortie
 	prix
@@ -37,4 +41,34 @@ SITE COMMUNAUTAIRE DE JEUX EN COOP
  QUESTIONS
 
 - gestion des images en bdd ?
-	envoie de l'image sur le serveur avec un form puis sauvegarde du chemin en bdd ?
+	envoie de l'image sur le serveur avec un form puis sauvegarde du chemin en bdd
+	faire une table à part pour gerer les images
+	enregistrer en base 64 pour les petites images
+- value dans fieldset en anglais et utiliser javascript pour les afficher en fr ou value direct en fr ? 
+	utiliser tableau associatif
+- message d'alerte avant suppression en javascript ? 
+	ok
+
+	-----
+
+- title 
+*être lisible pour un lecteur humain,
+*être informatif ou attrayant pour un lecteur humain,
+*refléter le contenu de la page,
+*contenir des mots-clé pertinents,
+*faire moins de 70 caractères
+	accueil user : Les jeux coop - Les sorties récentes
+	page avec filtre user : Trouver votre prochain jeux coop
+
+- description
+*Assurez-vous que la description de votre page est en adéquation avec le titre mais également le contenu de votre page. Si les moteurs de recherche détectent une incompatibilité entre ces éléments, ils peuvent vous considérer comme des spammeurs. Veillez à ce que la description de votre page soit :
+un déroulement du titre de la page,
+un résumé du contenu textuel de la page.
+*Ne dépassez pas 160 – 165 caractères, espace compris, pour être sûr que la description s’affiche entièrement dans la page de résultat des moteurs de recherche (pas tronquée)
+*Faites en sorte d’utiliser des phrases avec des verbes afin que la description ait un sens et pour éviter de passer pour du spam.
+*La description ne doit pas être destinée exclusivement aux moteurs de recherche mais également aux internautes qui viendront sur votre site seulement si la description les séduit et parle de ce qu’ils recherchent.
+*Il faut absolument rédiger une description unique par page. Utiliser la même description sur deux ou plus de pages vous coûtera cher puisque les moteurs de recherche considèreront que vous avez dupliqué vos page, ce qui est interdit en référencement.
+*Evitez de lister des mots-clés en guise de description de page, vous serez alors considérés comme des spammeurs. Il faut que votre description soit le développement de votre titre et le résumé de votre page.
+*Attention à ne pas répéter les mêmes mots clés de manière trop rapprochée. Si un mot-clé est répété, essayez d’en espacer les occurrences.
+*Si votre site s’adresse à plusieurs communautés linguistiques, les pages bilingues sont déconseillées. Il vaut mieux scinder votre site web en plusieurs entités distinctes, afin de proposer des descriptions différentes. Avoir des pages contenant des textes en deux langues nécessite des descriptions en deux langues également, ce qui induit des répétitions pouvant être considérées comme du spam. Cela nuirait à la lisibilité du contenu de la page.
+*Evitez les chiffres, les caractères spéciaux, des mots en majuscules... cela nuirait à la bonne lecture de la description mais également au référencement de votre site. Le nombre de caractère est limité, pourquoi gâcher des caractères alors que vous pourriez utiliser des mots entiers ?

@@ -3,18 +3,23 @@
 
 	<head>
 		<title><?= $title; ?></title>
+		<meta charset="utf-8">
+		<meta name="description" content="<?= $description; ?>">
+		<link rel="stylesheet" type="text/css" href="public\css\style.css">
 	</head>
 
-	<header>
-		<?= $headerContent; ?>
-	</header>
-
 	<body>
-		<?= $bodyContent; ?>
-	</body>
 
-	<footer>
-		<?= $footerContent; ?>
-	</footer>
+		<header>
+			<?= $headerContent; ?>
+		</header>
+
+		<?= $bodyContent; ?>
+
+		<footer>
+			<?= $footerContent; ?>
+		</footer>
+
+	</body>
 
 </html>

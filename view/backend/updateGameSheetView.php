@@ -1,6 +1,6 @@
 <?php 
-	$title = 'Titre du site';
-	$description = 'description de la page';
+	$title = 'Titre de la page';
+	$description = 'Description de la page';
 
 	include 'adminHeader.php';
 
@@ -8,9 +8,9 @@
 ?>
 
 <section>
-	<form action="index.php?action=addGameSheet" method="post">
+	<form action="index.php?action=updateGameSheet&amp;id=<?= $gameData['id']; ?>" method="post">
 		<div>
-			<input type="text" name="name" id="gameName" placeholder="Nom du jeu">
+			<input type="text" name="name" id="gameName" placeholder="Nom du jeu" value="<?= $gameData['gameName']; ?>">
 			<label for="gameName">Nom du jeu</label>
 		</div>
 		<div>
@@ -56,7 +56,7 @@
 			<label for="gameMinPlayerNumber">Nombre minimum de joueurs</label>
 		</div>
 		<div>
-			<input type="number" name="maxPlayerNumber" id="gameMaxPlayerNumber">
+			<input type="number" name="maxPlayerNumber" id="gameMaxPlayerNumber" value="<?= $gameData['gameMaxPlayerNumber']; ?>">
 			<label for="gameMaxPlayerNumber">Nombre maximum de joueurs</label>
 		</div>
 		<div>

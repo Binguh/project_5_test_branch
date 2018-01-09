@@ -1,10 +1,13 @@
 <?php ob_start(); ?>
 	
-	<div>
-		<div>
-			<a href="index.php?action=logout">Déconnexion</a>
+<div>
+	<div id="logoutStripe">
+		<div class="contentColumn">
+			<p><a href="index.php?action=logout">DECONNEXION</a></p>
 		</div>
-		<div>
+	</div>
+	<div id="nameStripe">
+		<div class="contentColumn">
 			<img src="" alt="logo">
 			<h1>Titre du site</h1>
 			<h2>Tagline</h2>
@@ -15,7 +18,9 @@
 				</div>
 			</form>
 		</div>
-		<div>
+	</div>
+	<div id="menuStripe">
+		<div class="contentColumn">
 			<nav>
 				<ul>
 					<li><a href="index.php">Accueil</a></li>
@@ -25,5 +30,6 @@
 			</nav>
 		</div>
 	</div>
+</div>
 
 <?php $headerContent = ob_get_clean(); ?>
