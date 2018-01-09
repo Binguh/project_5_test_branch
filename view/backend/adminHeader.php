@@ -9,17 +9,15 @@
 	<div id="nameStripe">
 		<div class="contentColumn">
 			<img src="" alt="logo">
-			<h1>Titre du site</h1>
+			<h1>Nom du site</h1>
 			<h2>Tagline</h2>
 			<form action="index.php?action=searchGame" method="post">
 				<div>
 					<input type="search" name="searchGame" id="searchGame" placeholder="Rechercher un jeu">
-					<button>loupe</button>
+					<button><i class="fa fa-search" aria-hidden="true"></i></button>
 				</div>
 			</form>
-		</div>
-	</div>
-	<div id="menuStripe">
+			<div id="menuStripe">
 		<div class="contentColumn">
 			<nav>
 				<ul>
@@ -30,6 +28,9 @@
 			</nav>
 		</div>
 	</div>
+		</div>
+	</div>
+	
 </div>
 
 <?php $headerContent = ob_get_clean(); ?>

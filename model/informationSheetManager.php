@@ -9,7 +9,7 @@
 		public function getLastGamesList()
 		{
 			$db = $this->dbConnect();
-			$gamesList = $db->query('SELECT id, gameName, gameCoopType, gameMicroLoot, gameMinPlayerNumber, gameMaxPlayerNumber, DATE_FORMAT(gameReleaseDate, \'%d/%m/%Y\') AS gameReleaseDateFr, gamePrice, gameOfficialWebsite FROM informationsheet ORDER BY sheetCreationDate DESC LIMIT 0, 6');
+			$gamesList = $db->query('SELECT id, gameName, gameCoopType, gameMinPlayerNumber, gameMaxPlayerNumber FROM informationsheet ORDER BY sheetCreationDate DESC LIMIT 0, 4');
 
 			return $gamesList;
 		}
