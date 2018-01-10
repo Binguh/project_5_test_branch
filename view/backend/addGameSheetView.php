@@ -8,16 +8,17 @@
 ?>
 
 <section>
+	<form action="index.php?action=uploadGameSheetImage" method="post" enctype="multipart/form-data">
+	    Choisir une image :
+	    <input type="file" name="fileToUpload" id="fileToUpload">
+	    <input type="submit" value="Télécharger" name="submit">
+	</form>
+	<p><?= $errorMessage; ?></p>
 	<form action="index.php?action=addGameSheet" method="post">
 		<div>
 			<input type="text" name="name" id="gameName" placeholder="Nom du jeu">
 			<label for="gameName">Nom du jeu</label>
 		</div>
-		<form action="index.php?action=uploadGameSheetImage" method="post" enctype="multipart/form-data">
-		    Choisir une image :
-		    <input type="file" name="fileToUpload" id="fileToUpload">
-		    <button>Télécharger</button>
-		</form>
 		<div>
 			<fieldset>
   				<legend>Type de coop</legend>

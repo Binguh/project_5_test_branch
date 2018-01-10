@@ -9,8 +9,8 @@
 			if ($_GET['action'] === 'goToAddGame') {
 				goToAddGame();
 			} elseif ($_GET['action'] === 'uploadGameSheetImage') {
-				if (!empty($_POST['fileToUpload'])) {
-					uploadGameSheetImage($_FILES["fileToUpload"]["tmp_name"]);
+				if (isset($_POST['submit'])) {
+					uploadGameSheetImage($_FILES['fileToUpload']['name'], $_FILES["fileToUpload"]["tmp_name"], $_FILES["fileToUpload"]["size"]);
 				} else {
 					throw new Exception('Sélectionner une image');					
 				}
