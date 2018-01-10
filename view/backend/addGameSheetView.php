@@ -13,6 +13,11 @@
 			<input type="text" name="name" id="gameName" placeholder="Nom du jeu">
 			<label for="gameName">Nom du jeu</label>
 		</div>
+		<form action="index.php?action=uploadGameSheetImage" method="post" enctype="multipart/form-data">
+		    Choisir une image :
+		    <input type="file" name="fileToUpload" id="fileToUpload">
+		    <button>Télécharger</button>
+		</form>
 		<div>
 			<fieldset>
   				<legend>Type de coop</legend>
@@ -74,10 +79,6 @@
 		<div>
 			<input type="text" name="officialWebsite" id="gameOfficialWebsite">
 			<label for="gameOfficialWebsite">Site officiel</label>
-		</div>
-		<div>
-			<input type="file" name="gameSheetImage" id="gameSheetImage">
-			<label for="gameSheetImage">Image</label>
 		</div>
 		<div>
 			<button>Ajouter</button>
