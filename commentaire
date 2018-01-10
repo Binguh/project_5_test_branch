@@ -40,12 +40,7 @@ SITE COMMUNAUTAIRE DE JEUX EN COOP
 
  QUESTIONS
 
-- gestion des images en bdd ?
-	envoie de l'image sur le serveur avec un form puis sauvegarde du chemin en bdd
-	faire une table à part pour gerer les images
-	enregistrer en base 64 pour les petites images
-- value dans fieldset en anglais et utiliser javascript pour les afficher en fr ou value direct en fr ? 
-	utiliser tableau associatif
+- utilisation de style: 'background'; dans html plutot que img ?
 - message d'alerte avant suppression en javascript ? 
 	ok
 

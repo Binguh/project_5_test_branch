@@ -12,8 +12,8 @@
 	<?php
 		while ($gameData = $lastGamesList->fetch()) {
 	?>
-			<div class="homePageGameSheet">
-				<img src="<?= $gameData['pathToGameSheetImage']; ?>">
+			<div class="homePageGameSheet" style="background-image: linear-gradient(rgba(50, 50, 50, 0.5), rgba(50, 50, 50, 0.5)), url(<?= $gameData['pathToGameSheetImage']; ?>);">
+				<!--<img src="<?= $gameData['pathToGameSheetImage']; ?>">-->
 				<a href="index.php?action=goToGame&amp;id=<?= $gameData['id'] ?>">
 					<div class="sheetLogo">
 						<p><i class="fa fa-file-text-o" aria-hidden="true"></i></p>

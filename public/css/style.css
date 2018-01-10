@@ -9,7 +9,7 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: rgb(71, 71, 71);
+	background: linear-gradient(90deg, rgb(100, 100, 100), rgb(150, 150, 150), rgb(100, 100, 100));
 	color: rgb(198, 198, 198);
 }
 
@@ -22,7 +22,7 @@ body {
 	#logoutStripe {
 		height: 50px;
 		line-height: 50px;
-		background-color: rgb(151, 25, 9);
+		background-color: rgb(169, 31, 20);
 	}
 
 	#logoutStripe p {
@@ -37,7 +37,7 @@ body {
 
 	#nameStripe {
 		height: 250px;
-		background-color: rgb(182, 49, 31);
+		background: linear-gradient(90deg,rgb(210, 55, 43), rgb(229, 93, 82), rgb(210, 55, 43));
 	}
 
 	#menuStripe {
@@ -67,10 +67,12 @@ body {
 		height: 550px;
 		overflow: hidden;
 		position: relative;
+		background: center no-repeat;
+		background-size: cover;
 	}
 
 	.homePageGameSheet img {
-		height: 100%;
+		margin: 0 auto;
 		filter: brightness(40%);
 		-webkit-filter: brightness(40%);
 	}
@@ -100,7 +102,7 @@ body {
 		left: 50%;
 		margin-left: -25px;
 		margin-top: -25px;
-		background-color: rgb(151, 25, 9);
+		background-color: rgb(169, 31, 20);
 		color: rgb(198, 198, 198);
 		border-radius: 50%;
 	}
@@ -115,7 +117,7 @@ body {
 		width: 100%;
 		height: 50px;
 		line-height: 50px;
-		background-color: rgb(60, 0, 28);
+		background-color: rgb(107, 0, 54);
 	}
 
 	footer p {
@@ -124,11 +126,11 @@ body {
 	}
 
 	footer a {
-		color: rgb(176, 56, 113);
+		color: rgb(214, 110, 163);
 		text-decoration: none;
 	}
 
 	footer a:hover {
-		background-color: rgba(211, 84, 67);
-		color: rgb(72, 8, 0);
+		background-color: rgba(255, 140, 131);
+		color: rgb(130, 9, 0);
 	}
