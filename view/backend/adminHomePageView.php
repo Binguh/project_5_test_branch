@@ -13,7 +13,7 @@
 		while ($gameData = $lastGamesList->fetch()) {
 	?>
 			<div class="homePageGameSheet">
-				<img src="public/images/games/trine2home.jpg">
+				<img src="<?= $gameData['pathToGameSheetImage']; ?>">
 				<a href="index.php?action=goToGame&amp;id=<?= $gameData['id'] ?>">
 					<div class="sheetLogo">
 						<p><i class="fa fa-file-text-o" aria-hidden="true"></i></p>

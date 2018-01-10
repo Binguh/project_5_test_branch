@@ -71,6 +71,13 @@ body {
 
 	.homePageGameSheet img {
 		height: 100%;
+		filter: brightness(40%);
+		-webkit-filter: brightness(40%);
+	}
+
+	.homePageGameSheet img:hover {
+		filter: brightness(60%);
+		-webkit-filter: brightness(60%);
 	}
 
 	.blockNameAndType {

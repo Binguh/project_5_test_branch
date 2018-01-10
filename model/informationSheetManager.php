@@ -9,16 +9,16 @@
 		public function getLastGamesList()
 		{
 			$db = $this->dbConnect();
-			$gamesList = $db->query('SELECT id, gameName, gameCoopType, gameMinPlayerNumber, gameMaxPlayerNumber FROM informationsheet ORDER BY sheetCreationDate DESC LIMIT 0, 4');
+			$gamesList = $db->query('SELECT id, gameName, gameCoopType, gameMinPlayerNumber, gameMaxPlayerNumber, pathToGameSheetImage FROM informationsheet ORDER BY sheetCreationDate DESC LIMIT 0, 4');
 
 			return $gamesList;
 		}
 
-		public function newGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite)
+		public function newGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path)
 		{
 			$db = $this->dbConnect();
-			$game = $db->prepare('INSERT INTO informationsheet(gameName, gameCoopType, gameMicroLoot, gameMinPlayerNumber, gameMaxPlayerNumber, gameReleaseDate, gamePrice, gameOfficialWebsite, sheetCreationDate) VALUES(?, ?, ?, ?, ?, ?, ?, ?, NOW())');
-			$newGame = $game->execute(array($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite));
+			$game = $db->prepare('INSERT INTO informationsheet(gameName, gameCoopType, gameMicroLoot, gameMinPlayerNumber, gameMaxPlayerNumber, gameReleaseDate, gamePrice, gameOfficialWebsite, sheetCreationDate, pathToGameSheetImage) VALUES(?, ?, ?, ?, ?, ?, ?, ?, NOW(), ?)');
+			$newGame = $game->execute(array($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path));
 
 			return $newGame;
 		}

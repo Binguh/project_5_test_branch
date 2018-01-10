@@ -16,6 +16,7 @@
 	function goToAddGame()
 	{
 		$errorMessage = '';
+		$targetFile = '';
 		require('view/backend/addGameSheetView.php');
 	}
 
@@ -51,11 +52,11 @@
 		require('view/backend/addGameSheetView.php');
 	}
 
-	function addGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite)
+	function addGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path)
 	{
 		$gameManager = new InformationSheetManager();
 
-		$newGame = $gameManager->newGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite);
+		$newGame = $gameManager->newGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path);
 		if ($newGame === false) {
 			throw new Exception('Impossible d\'ajouter le nouveau jeu');			
 		} else {

@@ -15,8 +15,8 @@
 					throw new Exception('Sélectionner une image');					
 				}
 			} elseif ($_GET['action'] === 'addGameSheet') {
-				if (!empty($_POST['name']) && !empty($_POST['coopType']) && !empty($_POST['microLoot']) && !empty($_POST['minPlayerNumber']) && !empty($_POST['maxPlayerNumber']) && !empty($_POST['releaseDate']) && !empty($_POST['price']) && !empty($_POST['officialWebsite'])) {
-					addGame($_POST['name'], $_POST['coopType'], $_POST['microLoot'], $_POST['minPlayerNumber'], $_POST['maxPlayerNumber'], $_POST['releaseDate'], $_POST['price'], $_POST['officialWebsite']);
+				if (!empty($_POST['name']) && !empty($_POST['coopType']) && !empty($_POST['microLoot']) && !empty($_POST['minPlayerNumber']) && !empty($_POST['maxPlayerNumber']) && !empty($_POST['releaseDate']) && !empty($_POST['price']) && !empty($_POST['officialWebsite']) && !empty($_POST['path'])) {
+					addGame($_POST['name'], $_POST['coopType'], $_POST['microLoot'], $_POST['minPlayerNumber'], $_POST['maxPlayerNumber'], $_POST['releaseDate'], $_POST['price'], $_POST['officialWebsite'], $_POST['path']);
 				} else {
 					throw new Exception('Tous les champs pour ajouter une fiche ne sont pas remplis');		
 				}

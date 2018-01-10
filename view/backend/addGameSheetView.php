@@ -82,6 +82,9 @@
 			<label for="gameOfficialWebsite">Site officiel</label>
 		</div>
 		<div>
+			<input type="hidden" name="path" id="pathToGameSheetImage" value="<?= $targetFile; ?>">
+		</div>
+		<div>
 			<button>Ajouter</button>
 		</div>
 	</form>
