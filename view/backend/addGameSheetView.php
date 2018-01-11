@@ -44,7 +44,7 @@
 			<fieldset>
 				<legend>Microtransaction</legend>
 				<div>
-					<input type="radio" id="nope" name="microLoot" value="lootbox" checked>
+					<input type="radio" id="nope" name="microLoot" value="nope" checked>
 					<label for="lootbox">Aucunes microtransactions</label>
 				</div>
 				<div>

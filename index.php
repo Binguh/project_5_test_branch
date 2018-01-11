@@ -21,6 +21,14 @@
 					throw new Exception('Tous les champs pour ajouter une fiche ne sont pas remplis');		
 				}
 			}
+	// One game sheet
+			elseif ($_GET['action'] === 'goToGame') {
+				if (isset($_GET['id']) && $_GET['id'] > 0) {
+					getOneGameSheet($_GET['id']);
+				} else {
+					throw new Exception('Aucun identifiant envoyé');				
+				}
+			}
 		} else {
 			lastGamesList();
 		}

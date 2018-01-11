@@ -13,6 +13,15 @@
 		require('view/backend/adminHomePageView.php');
 	}
 
+	function getOneGameSheet($id)
+	{
+		$gameManager = new InformationSheetManager();
+
+		$oneGameSheet = $gameManager->getOneGameSheet($id);
+
+		require('view/backend/adminOneGamePageView.php');
+	}
+
 	function goToAddGame()
 	{
 		$errorMessage = '';

@@ -14,11 +14,21 @@
 			return $gamesList;
 		}
 
+		public function getOneGameSheet($id)
+		{
+			$db = $this->dbConnect();
+			$req = $db->prepare('SELECT gameName, gameCoopType, gameMicroLoot, gameMinPlayerNumber, gameMaxPlayerNumber, DATE_FORMAT(gameReleaseDate, \'%d/%m/%Y\') AS gameReleaseDateFr, gamePrice, gameOfficialWebsite, sheetCreationDate, pathToGameSheetImage FROM informationsheet WHERE id = ?');
+			$req->execute(array($id));
+			$oneGameSheet = $req->fetch();
+
+			return $oneGameSheet;
+		}
+
 		public function newGame($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path)
 		{
 			$db = $this->dbConnect();
-			$game = $db->prepare('INSERT INTO informationsheet(gameName, gameCoopType, gameMicroLoot, gameMinPlayerNumber, gameMaxPlayerNumber, gameReleaseDate, gamePrice, gameOfficialWebsite, sheetCreationDate, pathToGameSheetImage) VALUES(?, ?, ?, ?, ?, ?, ?, ?, NOW(), ?)');
-			$newGame = $game->execute(array($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path));
+			$req = $db->prepare('INSERT INTO informationsheet(gameName, gameCoopType, gameMicroLoot, gameMinPlayerNumber, gameMaxPlayerNumber, gameReleaseDate, gamePrice, gameOfficialWebsite, sheetCreationDate, pathToGameSheetImage) VALUES(?, ?, ?, ?, ?, ?, ?, ?, NOW(), ?)');
+			$newGame = $req->execute(array($name, $coopType, $microLoot, $minPlayerNumber, $maxPlayerNumber, $releaseDate, $price, $officialWebsite, $path));
 
 			return $newGame;
 		}
